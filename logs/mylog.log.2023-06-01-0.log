@@ -1,0 +1,38 @@
+2023-06-01 15:32:36.539  INFO 19308 --- [restartedMain] c.i.api.ExecuteAlgorithmApplication      : Starting ExecuteAlgorithmApplication using Java 17.0.6 with PID 19308 (C:\Users\sycap\OneDrive\문서\workspace\execute_algorithm\build\classes\java\main started by sycap in C:\Users\sycap\OneDrive\문서\workspace\execute_algorithm)
+2023-06-01 15:32:36.543  INFO 19308 --- [restartedMain] c.i.api.ExecuteAlgorithmApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-06-01 15:32:36.596  INFO 19308 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\sycap\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.7.0.0\c7242cb44f0b5fe54b156bffd848347dfa943728\ojdbc8-21.7.0.0.jar referenced one or more files that do not exist: file:/C:/Users/sycap/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.7.0.0/c7242cb44f0b5fe54b156bffd848347dfa943728/oraclepki.jar
+2023-06-01 15:32:36.597  INFO 19308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-01 15:32:36.597  INFO 19308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-01 15:32:37.723  INFO 19308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-01 15:32:37.725  INFO 19308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-01 15:32:37.740  INFO 19308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-06-01 15:32:37.756  INFO 19308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-01 15:32:37.758  INFO 19308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-01 15:32:37.784  INFO 19308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-06-01 15:32:38.125  INFO 19308 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-01 15:32:38.160  INFO 19308 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-06-01 15:32:38.745  INFO 19308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-06-01 15:32:38.756  INFO 19308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-01 15:32:38.756  INFO 19308 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-06-01 15:32:38.852  INFO 19308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-01 15:32:38.853  INFO 19308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2254 ms
+2023-06-01 15:32:39.264  INFO 19308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-01 15:32:39.603  INFO 19308 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5efc983a
+2023-06-01 15:32:39.604  INFO 19308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-01 15:32:39.611  INFO 19308 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@192.168.10.78:1521/xe'
+2023-06-01 15:32:39.750  INFO 19308 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-01 15:32:39.842  INFO 19308 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-06-01 15:32:39.846  INFO 19308 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-06-01 15:32:40.031  INFO 19308 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-01 15:32:40.199  INFO 19308 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-01 15:32:40.464  INFO 19308 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.OracleDialect, version: 21.0
+2023-06-01 15:32:40.592  INFO 19308 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-01 15:32:40.830  INFO 19308 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-01 15:32:40.836  INFO 19308 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01 15:32:42.765  INFO 19308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-01 15:32:42.829  INFO 19308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-06-01 15:32:42.839  INFO 19308 --- [restartedMain] c.i.api.ExecuteAlgorithmApplication      : Started ExecuteAlgorithmApplication in 6.698 seconds (process running for 7.946)
+2023-06-01 15:32:42.841  INFO 19308 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-06-01 16:03:11.810  INFO 19308 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01 16:03:11.816  INFO 19308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-01 16:03:11.867  INFO 19308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
