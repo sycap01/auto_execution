@@ -32,7 +32,19 @@ public class AutoTradingExecutionsRepositoryQueryImpl implements AutoTradingExec
         Pageable pageable = PageRequest.of(page, pageSize);
 
         List<AutoTradingExecutionResponse> list = queryFactory
-                .select(Projections.fields(AutoTradingExecutionResponse.class))
+                .select(Projections.fields(AutoTradingExecutionResponse.class,
+                        autoTradingExecutions.id,
+                        autoTradingExecutions.productId,
+                        autoTradingExecutions.bookNo,
+                        autoTradingExecutions.marketCategoryCode,
+                        autoTradingExecutions.creationDate,
+                        autoTradingExecutions.writingUserNo,
+                        autoTradingExecutions.tradingEndCategoryCode,
+                        autoTradingExecutions.tradingEndCategoryCode,
+                        autoTradingExecutions.startReserveDatetime,
+                        autoTradingExecutions.endReserveDatetime,
+                        autoTradingExecutions.remarkContent,
+                        autoTradingExecutions.cancelYn))
                 .from(autoTradingExecutions)
                 .innerJoin(autoTradingExecutions.autoTradingExecutionHistories, autoTradingExecutionHistories)
                 .where(

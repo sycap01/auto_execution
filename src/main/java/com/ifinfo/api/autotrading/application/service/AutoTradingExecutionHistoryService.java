@@ -2,14 +2,12 @@ package com.ifinfo.api.autotrading.application.service;
 
 import com.ifinfo.api.autotrading.application.dto.AutoTradingExecutionHistoryModify;
 import com.ifinfo.api.autotrading.application.dto.AutoTradingExecutionHistoryRegister;
-import com.ifinfo.api.autotrading.application.dto.AutoTradingExecutionHistoryRequest;
 import com.ifinfo.api.autotrading.application.dto.AutoTradingExecutionHistoryResponse;
 import com.ifinfo.api.autotrading.domain.AutoTradingExecutionHistories;
 import com.ifinfo.api.autotrading.repository.AutoTradingExecutionHistoriesRepository;
 import com.ifinfo.api.infra.support.exception.ApiException;
 import com.ifinfo.api.infra.support.exception.ErrorInfo;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,11 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 public class AutoTradingExecutionHistoryService {
     private final AutoTradingExecutionHistoriesRepository repository;
-
-    @Transactional(readOnly = true)
-    public Page<AutoTradingExecutionHistoryResponse> list(AutoTradingExecutionHistoryRequest request) {
-        return repository.searchAutoTradingExecutionHistoryList(request);
-    }
 
     @Transactional(readOnly = true)
     public AutoTradingExecutionHistories detail(Long id) {
@@ -37,6 +30,7 @@ public class AutoTradingExecutionHistoryService {
     public AutoTradingExecutionHistoryResponse detailResponse(Long id) {
         return detail(id).ofDetailResponse();
     }
+
     @Transactional
     public AutoTradingExecutionHistoryResponse register(AutoTradingExecutionHistoryRegister input) {
         AutoTradingExecutionHistories autoTradingExecutionHistory = input.ofEntity();
